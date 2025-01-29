@@ -15,10 +15,11 @@ const ChatBot = () => {
 
     try {
       const response = await axios.post("http://localhost:5000/api/chatbot", {
-        message: input,
+        msg: input,
+        chatHistory: messages,
       });
 
-      const botMessage = { text: response.data.reply, sender: "bot" };
+      const botMessage = { text: response.data.text, sender: "bot" };
       setMessages((prev) => [...prev, botMessage]);
     } catch (error) {
       console.error("Error sending message:", error);

@@ -1,4 +1,4 @@
-import { IconChevronDown, IconSun } from "@tabler/icons-react";
+import { ChevronDown, Sun } from "lucide-react";
 import { useEffect } from "react";
 
 const ThemeController = () => {
@@ -58,8 +58,8 @@ const ThemeController = () => {
         role="button"
         className="btn btn-primary text-primary-content flex items-center gap-2"
       >
-        <IconSun />
-        <IconChevronDown />
+        <Sun />
+        <ChevronDown />
       </div>
       <ul
         tabIndex={0}

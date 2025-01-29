@@ -27,11 +27,6 @@ export default function Sidebar() {
       path: "/admin/reports",
     },
     {
-      name: "Categories",
-      icon: "fas fa-tags",
-      path: "/admin/categories",
-    },
-    {
       name: "Settings",
       icon: "fas fa-tools",
       path: "/admin/settings",

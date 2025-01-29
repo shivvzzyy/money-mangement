@@ -8,6 +8,10 @@ import NotFound from "./views/NotFound";
 import Dashboard from "./views/Dashboard";
 import ExpenseTrack from "./views/ExpenseTrack";
 import BudgetPlanner from "./views/BudgetPlanner";
+import About from "./views/About";
+import Contact from "./views/Contact";
+import Reports from "./views/Reports";
+import Settings from "./views/Settings";
 
 const App = () => {
   const { user } = useUser();
@@ -28,8 +32,8 @@ const App = () => {
             )
           }
         />
-        <Route path="/about" element={<h1>About</h1>} />
-        <Route path="/contact" element={<h1>Contact</h1>} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
         <Route
           path="/admin/dashboard"
           element={!user ? <Navigate to="/auth/login" /> : <Dashboard />}
@@ -37,6 +41,14 @@ const App = () => {
         <Route
           path="admin/track-expense"
           element={!user ? <Navigate to="/auth/login" /> : <ExpenseTrack />}
+        />
+        <Route
+          path="admin/reports"
+          element={!user ? <Navigate to="/auth/login" /> : <Reports />}
+        />
+        <Route
+          path="admin/settings"
+          element={!user ? <Navigate to="/auth/login" /> : <Settings />}
         />
         <Route
           path="admin/make-budget"

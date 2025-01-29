@@ -24,7 +24,6 @@ const UserDropdown = () => {
   // Dropdown items
   const dropdownItems = [
     { name: "Profile", action: () => console.log("Profile clicked") },
-    { name: "Settings", action: () => console.log("Settings clicked") },
     { name: "Help", action: () => console.log("Help clicked") },
     { name: "Logout", action: () => console.log("Logout clicked") },
   ];
@@ -59,13 +58,13 @@ const UserDropdown = () => {
           "bg-base-100 text-base-content z-50 float-left py-2 list-none text-left rounded shadow-lg min-w-48"
         }
       >
-        <h1>{user.name}</h1>
+        <h1 className="text-base text-center py-2">{user.name}</h1>
         {dropdownItems.map((item, index) => (
           <a
             key={index}
             href="#pablo"
             className={
-              "text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent text-base-content"
+              "text-sm w-full bg-transparent text-base-content btn btn-ghost"
             }
             onClick={(e) => {
               e.preventDefault();
