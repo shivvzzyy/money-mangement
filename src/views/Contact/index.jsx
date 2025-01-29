@@ -9,13 +9,13 @@ const Contact = () => {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto px-40 sm:px-32 md:px-24 py-12 max-w-7xl pt-28">
+      <div className="container mx-auto px-6 sm:px-12 md:px-24 lg:px-40 py-12 max-w-7xl pt-28">
         {/* Header Section */}
-        <div className="mb-12">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+        <div className="mb-12 text-center">
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Get In Touch
           </h1>
-          <p className="text-gray-600 max-w-2xl">
+          <p className="text-gray-600 max-w-2xl mx-auto">
             We&apos;d love to hear from you! Whether you have questions, need
             support, or want to learn more about our services, our team is here
             to help.
@@ -23,7 +23,7 @@ const Contact = () => {
         </div>
 
         {/* Contact Info Grid */}
-        <div className="grid md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mb-12">
           <div className="flex items-start space-x-3">
             <div className="p-3 bg-blue-50 rounded-lg">
               <MapPin className="h-6 w-6 text-blue-700" />
@@ -70,10 +70,13 @@ const Contact = () => {
 
         {/* Form Section */}
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">
             Request a Demo or Ask Queries
           </h2>
-          <form onSubmit={handleSubmit} className="grid md:grid-cols-2 gap-6">
+          <form
+            onSubmit={handleSubmit}
+            className="grid grid-cols-1 md:grid-cols-2 gap-6"
+          >
             <div>
               <label
                 htmlFor="fullName"

@@ -5,10 +5,12 @@ const About = () => {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto px-40 sm:px-32 md:px-24 py-12 max-w-7xl pt-28">
+      <div className="container mx-auto px-6 sm:px-12 md:px-24 lg:px-40 py-12 max-w-7xl pt-28">
         {/* Header Section */}
         <div className="mb-16 text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">About Us</h1>
+          <h1 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+            About Us
+          </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             We are a team of passionate individuals dedicated to delivering
             innovative solutions and exceptional service to our clients.
@@ -16,7 +18,7 @@ const About = () => {
         </div>
 
         {/* Company Info Cards */}
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 mb-16">
           <div className="bg-white p-6 rounded-lg shadow-md text-center">
             <div className="bg-blue-50 rounded-full p-3 w-16 h-16 mx-auto mb-4 flex items-center justify-center">
               <Users className="h-8 w-8 text-blue-600" />
@@ -51,7 +53,7 @@ const About = () => {
 
         {/* Company Story */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">
             Our Story
           </h2>
           <div className="bg-white p-8 rounded-lg shadow-md">
@@ -80,10 +82,10 @@ const About = () => {
 
         {/* Team Section */}
         <div className="mb-16">
-          <h2 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-6 text-center">
             Meet Our Team
           </h2>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
             {[
               {
                 name: "Saurav Patil",
@@ -122,7 +124,7 @@ const About = () => {
 
         {/* Call to Action */}
         <div className="text-center">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
+          <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
             Ready to Work With Us?
           </h2>
           <p className="text-xl text-gray-600 mb-8">
